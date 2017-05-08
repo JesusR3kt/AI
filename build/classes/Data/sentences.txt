@@ -1,8 +1,9 @@
--firstopeners;Howdy;Hi;Holla;What's cracking;Wassaaaaaaap;Ha ha hallo; 
--openers;Long time no see;Greetings;I bims da J4Z3ER;Hallo;*Tipps Fedora*Mi Lady;
--closers;Todaloo;*disapears with style*;Slator alligator
--insults;Butthead;I don't like you;Move away peasant;You cunt;Kill your self;Cyka Blyat;Your Mom is ugly, lol;Bark;I don't like your presence;Pfui
--compliments;Good boi!;You look hot;Uuuu lala;You, I like you;<3;
--agreements;Yee;Afermative;Potassium;Positive;I can only agree;
--disagreements;I ma say no;Neggative;You are so wrong;Reverse Yee;
--yesnoq;How are you;Do you like Pink-Cunt;Yes or no;Do you think Bernd Guenther Lafer is hot;Want som fuck;Did you enjoy My Little Pony firendship island;
+-firstopeners;Howdy.;Hi;Holla.;What's cracking.;Wassaaaaaaap.;Ha ha hallo.; 
+-openers;Long time no see.;Greetings.;I bims da J4Z3ER.;Hallo.;*Tipps Fedora* Mi Lady.;
+-closers;Todaloo.;*disapears with style*;Slator alligator.;
+-insults;Butthead!;I don't like you.;Move away peasant.;You cunt;Kill your self.;Cyka Blyat.;Your Mom is ugly, lol.;Bark.;I don't like your presence.;Pfui!;
+-compliments;Good boi!;You look hot.;You, I like you.;<3;
+-agreements;Yee.;Afermative.;Potassium.;Positive.;I can only agree.;K;
+-disagreements;I ma say no.;Neggative.;You are so wrong.;Reverse Yee.;
+-yesnoq;How are you?;Do you like Pink-Cunt?;Yes or no?;U want sum fuk?;Did you enjoy My Little Pony firendship island?;
+    
