@@ -18,7 +18,8 @@ public class AiRelations {
     //talk counter mit jeder ai
     private List<Ai> ais = new ArrayList();
     private List<Integer> talkList = new ArrayList();
-
+    private List<Integer> sympList = new ArrayList();
+    
     public void setAis(ArrayList ais) {
         this.ais = ais;
 

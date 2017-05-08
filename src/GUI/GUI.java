@@ -33,10 +33,24 @@ public class GUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jScrollPane1 = new javax.swing.JScrollPane();
+        taLog = new javax.swing.JTextArea();
         paDraw = new Canvas();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
+
+        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane1.setAutoscrolls(true);
+        jScrollPane1.setPreferredSize(new java.awt.Dimension(300, 63));
+
+        taLog.setEditable(false);
+        taLog.setColumns(20);
+        taLog.setFont(new java.awt.Font("Monospaced", 0, 9)); // NOI18N
+        taLog.setRows(5);
+        jScrollPane1.setViewportView(taLog);
+
+        getContentPane().add(jScrollPane1, java.awt.BorderLayout.CENTER);
 
         javax.swing.GroupLayout paDrawLayout = new javax.swing.GroupLayout(paDraw);
         paDraw.setLayout(paDrawLayout);
@@ -49,7 +63,7 @@ public class GUI extends javax.swing.JFrame {
             .addGap(0, 300, Short.MAX_VALUE)
         );
 
-        getContentPane().add(paDraw, java.awt.BorderLayout.CENTER);
+        getContentPane().add(paDraw, java.awt.BorderLayout.WEST);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -90,6 +104,8 @@ public class GUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JPanel paDraw;
+    public static javax.swing.JTextArea taLog;
     // End of variables declaration//GEN-END:variables
 }
