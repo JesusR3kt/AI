@@ -19,6 +19,7 @@ public class AiRelations {
     private List<Ai> ais = new ArrayList();
     private List<Integer> talkList = new ArrayList();
     private List<Integer> sympList = new ArrayList();
+    //o boi los gehts
     
     public void setAis(ArrayList ais) {
         this.ais = ais;
