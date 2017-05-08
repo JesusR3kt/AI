@@ -97,11 +97,10 @@ public class Ai {
         //conversation.startConv(this ,ais.get(0));
         if (cooldown < 1) {
             air.talk(nearest);
-            cooldown = 3000;
+            cooldown = 1500;
             nearest.setCooldown(cooldown);
-            System.out.println(name);
             conversation = new Conversation_V2();
-            conversation.startConversation(this, nearest);
+            conversation.startConversation(this, nearest, (r.nextInt(10)+5));
         } else {
             cooldown--;
         }

@@ -9,10 +9,12 @@ import AI.Ai;
 import static AI.Ai.FEMALE;
 import static AI.Ai.MALE;
 import GUI.Canvas;
+import static GUI.GUI.taLog;
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 
 /**
  *
@@ -46,7 +48,8 @@ public class GameLogic extends Thread{
         ais.add(robert);       
         ais.add(uschi);
         ais.add(james);
-        for(Ai ai:ais){
+        for(Ai ai:ais){  
+            taLog.append(ai.getName() + " was created.\n");
             ai.setAis(ais);
         }
         canvas.setList(ais);        
