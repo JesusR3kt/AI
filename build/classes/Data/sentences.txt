@@ -1,9 +1,13 @@
 -firstopeners;Howdy.;Hi;Holla.;What's cracking.;Wassaaaaaaap.;Ha ha hallo.; 
 -openers;Long time no see.;Greetings.;I bims da J4Z3ER.;Hallo.;*Tipps Fedora* Mi Lady.;
 -closers;Todaloo.;*disapears with style*;Slator alligator.;
--insults;Butthead!;I don't like you.;Move away peasant.;You cunt;Kill your self.;Cyka Blyat.;Your Mom is ugly, lol.;Bark.;I don't like your presence.;Pfui!;
--compliments;Good boi!;You look hot.;You, I like you.;<3;
+-sinsults;I don't like you.;Bark.;I don't like your presence.;Pfui!;
+-minsults;Move away peasant.;Your Mom is ugly, lol.;
+-hinsults;Butthead!;You cunt!;Cyka Blyat.;Kill your self.;Faggot;
+-scompliments;You, I like you.;
+-mcompliments;Good boi!;
+-hcompliments;You look hot.;<3;
 -agreements;Yee.;Afermative.;Potassium.;Positive.;I can only agree.;K;
--disagreements;I ma say no.;Neggative.;You are so wrong.;Reverse Yee.;
+-disagreements;I ma say no.;Neggative.;Reverse Yee.;
 -yesnoq;How are you?;Do you like Pink-Cunt?;Yes or no?;U want sum fuk?;Did you enjoy My Little Pony firendship island?;
     

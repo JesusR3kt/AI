@@ -20,6 +20,8 @@ import static GUI.GUI.taLog;
  */
 public class Conversation_V2 extends Thread{
 
+    //Listen für Phrasen mache von s zu h 
+    
     private ArrayList<String>   
             openers = new ArrayList(), 
             agreem = new ArrayList(),
@@ -27,7 +29,15 @@ public class Conversation_V2 extends Thread{
             yesnoq = new ArrayList(),
             firstopeners = new ArrayList(), 
             closers = new ArrayList(), 
+            
             insults = new ArrayList(), 
+            sinsults = new ArrayList(), 
+            minsults = new ArrayList(), 
+            hinsults = new ArrayList(), 
+            
+            scompliments = new ArrayList(),
+            mcompliments = new ArrayList(),
+            hcompliments = new ArrayList(),
             compliments = new ArrayList();
     
     
@@ -37,7 +47,7 @@ public class Conversation_V2 extends Thread{
     private Ai ai, talkAi;
     
     private boolean conv, ynq = false;
-    private int ca = 0, ct = 0, len = 0;
+    private int ca = 0, ct = 0, len = 0, c=0;
    
     public void startConversation(Ai ai, Ai talkAi, int len){
         this.ai = ai;
@@ -66,6 +76,38 @@ public class Conversation_V2 extends Thread{
             }   
             talk();       
         }       
+    }
+    
+    
+    public void talkNew(){
+        if(c%2==0){
+            taLog.append(ai.getName() + ": ");
+        }
+        else{
+            taLog.append(talkAi.getName() + ": ");
+        }
+        c++;
+        
+        ////////////////////////////////////////////////////////////////////////
+        
+        if(c<=2){
+            //greet
+        }
+        if(c>len){
+            //servas net vergessen conv aus machen
+        }
+        
+        ////////////////////////////////////////////////////////////////////////
+        
+        
+    }
+    
+    private void decision(){
+        
+    }
+    
+    private void writeNew(){
+        
     }
     
     public void talk(){
