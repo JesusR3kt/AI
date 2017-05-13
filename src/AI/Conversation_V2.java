@@ -104,6 +104,29 @@ public class Conversation_V2 extends Thread{
     
     private void decision(){
         
+        //nice sein
+        
+        //neutral
+        
+        //holy fuck
+        
+    }
+    
+    private void nice(){
+        //yesno
+        //compliments m-h
+        //gettin to know shit
+    }
+    
+    private void neutral(){
+        //yesno
+        //compliments s-m
+        //insults s
+    }
+    
+    private void mean(){
+        //insults s-h
+        //insultqestion
     }
     
     private void writeNew(){
