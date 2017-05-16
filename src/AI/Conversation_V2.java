@@ -58,6 +58,12 @@ public class Conversation_V2 extends Thread{
         conv = true;
         read();
         set();
+        decision();
+        decision();
+        decision();
+        decision();
+        decision();
+        decision();
         try{
             this.start(); 
         }
@@ -76,8 +82,7 @@ public class Conversation_V2 extends Thread{
             }   
             talk();       
         }       
-    }
-    
+    }   
     
     public void talkNew(){
         if(c%2==0){
@@ -92,45 +97,150 @@ public class Conversation_V2 extends Thread{
         
         if(c<=2){
             //greet
+            return;
         }
-        if(c>len){
+        else if(c>len){
             //servas net vergessen conv aus machen
+            return;
         }
         
         ////////////////////////////////////////////////////////////////////////
         
+        else if(c>2){
+            decision();
+        }
         
     }
     
     private void decision(){
+        int symp = ai.getAir().getSymp(talkAi);
+        int i = -1;
+        while(i<0){
+        i = (int)r.nextGaussian()*100+symp;
+        }
         
-        //nice sein
+        if(symp>660){
+            if(i<=symp-100){
+                System.out.println("holy fuck");   
+                mean();
+                return;
+            }
         
-        //neutral
+            else if(i==symp){
+                System.out.println("nice"); 
+                nice();
+                return;
+            }
+            
+            else{
+                System.out.println("neutral"); 
+                neutral();
+                return;
+            } 
+        }
         
-        //holy fuck
+        else if(symp<330){
+            if(i<=symp-100){
+                System.out.println("neutral"); 
+                neutral();
+                return;
+            }
         
+            else if(i==symp){
+                System.out.println("holy"); 
+                mean();
+                return;
+            }
+            
+            else{
+                System.out.println("nice"); 
+                nice();
+                return;
+            } 
+        }
+        
+        else{
+            if(i<=symp-100){
+                System.out.println("holy fuck");     
+                mean();
+                return;
+            }
+        
+            else if(i==symp){
+                System.out.println("neutral"); 
+                neutral();
+                return;
+            }
+            
+            else{
+                System.out.println("nice"); 
+                nice();
+                return;
+            }      
+        }
+         
+         
     }
     
     private void nice(){
-        //yesno
-        //compliments m-h
+        int i = r.nextInt(60)+1;
+        
+        if(i<20){
+            sentenceBuilder(yesnoq);
+            return;
+        }
+        else if(i<60){
+            sentenceBuilder(mcompliments);
+            return;
+        }
+        else if(i<=60){
+            sentenceBuilder(hcompliments);
+        }   
         //gettin to know shit
     }
     
     private void neutral(){
-        //yesno
-        //compliments s-m
-        //insults s
+        int i = r.nextInt(70)+1;
+        
+        if(i<20){
+            sentenceBuilder(yesnoq);
+            return;
+        }
+        else if(i<40){
+            sentenceBuilder(scompliments);
+            return;
+        }
+        else if(i<60){
+            sentenceBuilder(mcompliments);
+            return;
+        }
+        else if(i<=70){
+            sentenceBuilder(sinsults);
+            return;
+        }
     }
     
     private void mean(){
-        //insults s-h
+        int i = r.nextInt(60)+1;
+        
+        if(i<20){
+            sentenceBuilder(sinsults);
+            return;
+        }
+        else if(i<40){
+            sentenceBuilder(minsults);
+            return;
+        }
+        else if(i<=60){
+            sentenceBuilder(hinsults);
+            return;
+        }
         //insultqestion
     }
     
-    private void writeNew(){
-        
+    private void sentenceBuilder(ArrayList l){
+        int z = (r.nextInt(l.size())+1)-1; 
+        taLog.append(l.get(z)+"\n");
     }
     
     public void talk(){
@@ -271,16 +381,36 @@ public class Conversation_V2 extends Thread{
                             closers.add(l);                            
                         }
                         break;
-                    case "-insults":
+                    case "-sinsults":
                         for (String l : helpList) {
-                            insults.add(l);
+                            sinsults.add(l);
                         }
                         break;
-                    case "-compliments":
+                    case "-minsults":
                         for (String l : helpList) {
-                            compliments.add(l);
+                            minsults.add(l);
+                        }
+                        break;
+                    case "-hinsults":
+                        for (String l : helpList) {
+                            hinsults.add(l);
+                        }
+                        break;    
+                    case "-scompliments":
+                        for (String l : helpList) {
+                            scompliments.add(l);
                         } 
                         break;
+                    case "-mcompliments":
+                        for (String l : helpList) {
+                            mcompliments.add(l);
+                        } 
+                        break;
+                    case "-hcompliments":
+                        for (String l : helpList) {
+                            hcompliments.add(l);
+                        } 
+                        break;    
                     case "-agreements":
                         for (String l : helpList) {
                             agreem.add(l);

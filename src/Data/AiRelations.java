@@ -27,7 +27,7 @@ public class AiRelations {
 
         for (int i = talkList.size(); i < ais.size(); i++) {
             talkList.add(0);
-            sympList.add(500);
+            sympList.add(800);
         }
 
     }
